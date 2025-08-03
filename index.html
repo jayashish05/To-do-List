@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tasks"></i> My To-Do List</h1>
+        </header>
+        <div class="todo-form">
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="100">
+                <button id="addBtn" class="add-btn">
+                    <h3>+</h3>
+                </button>
+            </div>
+        </div>
+        <div class="todo-controls">
+            <button id="clearAllBtn" class="clear-btn">
+                <i class="fas fa-trash"></i> Clear All
+            </button>
+        </div>
+        <div class="todo-list-container">
+            <ul id="todoList" class="todo-list"></ul>
+            <div id="emptyState" class="empty-state">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>No tasks yet!</h3>
+                <p>Add a task above to get started</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
